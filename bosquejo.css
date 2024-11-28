@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+.contenedor{
+    font-family: arial;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+    width: 100%;
+    height: 300px;
+}
+
+.div-1{
+background-color: magenta;
+width: 200px;
+height: 200px;
+}
+
+.div-2{
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+}
+
+.div-3{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+
+}
