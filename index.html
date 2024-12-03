@@ -1,0 +1,60 @@
+<!-- CLASE 28/11/24 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- SALUDAR -->
+    
+    <button onclick="saludar()">¡Click me!</button>
+
+    <!-- FUNCION CONTADOR DE NUMEROS -->
+    <!-- <button onclick="countClick()"> Click +1 </button> -->
+
+    <!-- CONTADOR -->
+    <!-- Mejor manera de usar el contador de clicks -->
+    <button id="contador"> Click +1 </button>
+
+    <p> Clicks realizados: <span id="numero">0</span></p>
+
+    <!-- CAMBIAR EL COLOR  -->
+    <h2> Selecciona un color para cambiar </h2>
+    <input id="colorSelector" type="color">
+
+    <!-- LISTADO DINAMICO 21:28 aprox --> 
+
+    <form id="formulario">
+        <input type="text" id="item" placeholder="Añade un elemento">
+        <!-- submit es la accion que pasa cuando vos mandas el formulario, es el envio -->
+        <!-- Este button no necesita id porque tiene definido el submit -->
+        <button type="submit">Añadir a la lista</button>
+    </form>
+
+    <!-- <ul> es una lista desordenada -->
+    <ul id="lista"></ul>
+
+    <script>
+            function saludar () {
+            console.log ("Hola!!!")
+        }
+
+        // FUNCION CONTADOR DE NUMEROS, es recomendable hacer en el archivo .js
+
+        // let contador = 0;
+
+        // function countClick(){
+        //     contador = contador + 1
+        //     console.log (contador)
+        // }
+
+    </script>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
