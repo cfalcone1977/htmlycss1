@@ -13,7 +13,7 @@ const botonAzul= document.getElementById("AZUL");
 const botonRojo = document.getElementById("ROJO");
 const botonVerde = document.getElementById("VERDE");
 const cajabotones = document.getElementById("botonColores");
-
+const ColorConInput=document.getElementById("cambioColorSeleccion");
 let cuerpoPagina= document.body;
 let colorUsado=document.getElementById("nombreColor");
 
@@ -56,7 +56,16 @@ botonVerde.addEventListener("click", () =>{
                                     cuerpoPagina.style.backgroundColor='green';
                                     colorUsado.textContent='VERDE';
                                          });
+//"input" es el formato de como se captura el evento en el addEventListener.
+// event es el evento que devuelve cada vez que el puntero del mouse se detiene sobre un color!.
+// event.target.value es el valor que tiene el evento en ese instante!.                                        
+ColorConInput.addEventListener("input",(event) => {
+                                     cuerpoPagina.style.backgroundColor = event.target.value;
+                                     colorUsado.textContent=event.target.value;
+                                                  });
+    
 cajabotones.addEventListener("mouseover",cambioColorFondo('yellow'));
+
 
 
 
